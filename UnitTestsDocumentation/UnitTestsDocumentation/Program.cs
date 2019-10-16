@@ -20,35 +20,26 @@ namespace UnitTestsDocumentation
             Console.WriteLine("3) Deposit");
             Console.WriteLine("4) Exit");
             Console.Write("Choose an option: ");
-            string result = Console.ReadLine();
 
-            if (result == "1")
+            switch (Console.ReadLine())
             {
-                Balance(balance);
-                return true;
-            }
-            else if (result == "2")
-            {
-                Console.WriteLine("Enter the withdrawal amount.");
-                string input = Console.ReadLine();
-                balance = Withdraw(balance, Decimal.Parse(input));
-                return true;
-            }
-            else if (result == "3")
-            {
-                Console.WriteLine("Enter the deposit amount.");
-                string input = Console.ReadLine();
-                balance = Deposit(balance, Decimal.Parse(input));
-                return true;
-            }
-            else if (result == "4")
-            {
-                Console.WriteLine("Exit");
-                return false;
-            }
-            else
-            {
-                return false;
+                case "1":
+                    Balance(balance);
+                    return true;
+                case "2":
+                    Console.WriteLine("Enter the withdrawal amount.");
+                    string withdrawal = Console.ReadLine();
+                    balance = Withdraw(balance, Decimal.Parse(withdrawal));
+                    return true;
+                case "3":
+                    Console.WriteLine("Enter the deposit amount.");
+                    string deposit = Console.ReadLine();
+                    balance = Deposit(balance, Decimal.Parse(deposit));
+                    return true;
+                case "4":
+                    return false;
+                default:
+                    return true;
             }
         }
         public static decimal Balance(decimal balance)
@@ -58,13 +49,19 @@ namespace UnitTestsDocumentation
         }
         public static decimal Withdraw(decimal balance, decimal withdrawal)
         {
-            if(withdrawal > 0)
+            if (withdrawal < 0)
             {
-                return balance -= withdrawal;
+                throw new Exception("Negative amount not allowed");
+
+            }
+            else if (withdrawal > balance)
+            {
+                throw new Exception("Withdrawal exceeds the current balance");
             }
             else
             {
-                throw new Exception("Negative amount not allowed");
+                return balance -= withdrawal;
+
             }
         }
         public static decimal Deposit(decimal balance, decimal deposit)
