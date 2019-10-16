@@ -9,7 +9,7 @@ Lab02-Unit-Tests-Documentation-Handling
 ----
 
 ## Description
-This is a bank ìATMî program within a console application that will demonstate basic understanding of C# and Test Driven Developmeent concept.
+This is a bank ‚ÄúATM‚Äù program within a console application that will demonstate basic understanding of C# and Test Driven Developmeent concept.
 
 ---
 
@@ -33,11 +33,13 @@ Then select and open ```ExceptionHandlingDebugging.sln```
 
 ### Visuals
 #### Application Start
-![Image 1](https://via.placeholder.com/750x500)
-#### Using the Application
-![Image 1](https://via.placeholder.com/750x500)
-#### Application End
-![Image 1](https://via.placeholder.com/750x500)
+![Image 1](https://github.com/jeremymaya/Code-401-Lab02-UnitTestsDocumentation/blob/master/Screenshots/Start.JPG)
+#### Using the Application - Balance
+![Image 2](https://github.com/jeremymaya/Code-401-Lab02-UnitTestsDocumentation/blob/master/Screenshots/StartingBalance.JPG)
+#### Using the Application - Withdraw
+![Image 3](https://github.com/jeremymaya/Code-401-Lab02-UnitTestsDocumentation/blob/master/Screenshots/Withdraw.JPG)
+#### Using the Application - Deposit
+![Image 4](https://github.com/jeremymaya/Code-401-Lab02-UnitTestsDocumentation/blob/master/Screenshots/Deposit.JPG)
 
 ---
 
