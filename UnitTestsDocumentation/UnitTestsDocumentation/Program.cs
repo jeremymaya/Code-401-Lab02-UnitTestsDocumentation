@@ -65,11 +65,22 @@ namespace UnitTestsDocumentation
                 return true;
             }
         }
+        /// <summary>
+        /// Balance methods displays the current balance in the program
+        /// </summary>
+        /// <param name="balance">global current balance</param>
+        /// <returns></returns>
         public static decimal Balance(decimal balance)
         {
             Console.WriteLine($"Your current balance is ${balance}.");
             return balance;
         }
+        /// <summary>
+        /// Withdraw methods checks if user input is valid, then substracts the withdrawal to the balance
+        /// </summary>
+        /// <param name="balance">global current balance</param>
+        /// <param name="withdrawal">amount user entered for withdrawal</param>
+        /// <returns></returns>
         public static decimal Withdraw(decimal balance, decimal withdrawal)
         {
             if (withdrawal < 0)
@@ -87,6 +98,12 @@ namespace UnitTestsDocumentation
 
             }
         }
+        /// <summary>
+        /// Deposit methods checks if user input valid, then adds deposit to the balance
+        /// </summary>
+        /// <param name="balance">global current balance</param>
+        /// <param name="deposit">amount user entered for deposit</param>
+        /// <returns></returns>
         public static decimal Deposit(decimal balance, decimal deposit)
         {
             if (deposit < 0)

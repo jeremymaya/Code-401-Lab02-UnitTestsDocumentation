@@ -9,7 +9,6 @@ Lab02-Unit-Tests-Documentation-Handling
 ----
 
 ## Description
-***[Tell me about your application, should be about a paragraph]***
 This is a bank “ATM” program within a console application that will demonstate basic understanding of C# and Test Driven Developmeent concept.
 
 ---
@@ -22,19 +21,17 @@ $ git clone https://github.com/jeremymaya/Code-401-Lab02-UnitTestsDocumentation.
 ```
 
 ### To run the program from Visual Studio:
-Select ```File``` -> ```Open``` -> ```Project/Solution```
+Select ```File``` -> ```Open``` -> ```Code-401-Lab01-Exception-Handling-Debugging```
 
 Next navigate to the location you cloned the Repository.
 
-Double click on the ```Code-401-Lab01-Exception-Handling-Debugging``` directory.
+Double click on the ```UnitTestsDocumentation``` directory.
 
 Then select and open ```ExceptionHandlingDebugging.sln```
 
 ---
 
 ### Visuals
-***[Add screenshots of your application in action]***
-
 #### Application Start
 ![Image 1](https://via.placeholder.com/750x500)
 #### Using the Application
@@ -45,4 +42,4 @@ Then select and open ```ExceptionHandlingDebugging.sln```
 ---
 
 ### Change Log
-1.0: lab Started - 16 Oct 2017 8:28am  
+1.0: Lab 02 compelted - 16 Oct 2017 11:30am  
