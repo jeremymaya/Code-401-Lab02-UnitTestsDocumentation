@@ -35,27 +35,29 @@ namespace UnitTestsDocumentation
                         Balance(balance);
                         return true;
                     case "2":
-                        Console.WriteLine("Enter the withdrawal amount.");
+                        Console.WriteLine("Enter an amount to withdraw.");
                         string withdrawal = Console.ReadLine();
                         balance = Withdraw(balance, Decimal.Parse(withdrawal));
+                        Console.WriteLine($"Your current balance is ${balance}.");
                         return true;
                     case "3":
-                        Console.WriteLine("Enter the deposit amount.");
+                        Console.WriteLine("Enter an amount to deposit.");
                         string deposit = Console.ReadLine();
                         try
                         {
                             balance = Deposit(balance, Decimal.Parse(deposit));
+                            Console.WriteLine($"Your current balance is ${balance}.");
+                            return true;
                         }
                         catch (OverflowException)
                         {
-                            Console.WriteLine("Deposit amount you entered is too big");
+                            Console.WriteLine("The deposit amount you entered is too large.");
                             return true;
                         }
-                        return true;
                     case "4":
                         return false;
                     default:
-                        Console.WriteLine("Invalid entry.");
+                        Console.WriteLine("That was an invalid entry.");
                         return true;
                 }
             }
@@ -85,12 +87,12 @@ namespace UnitTestsDocumentation
         {
             if (withdrawal < 0)
             {
-                throw new Exception("Negative amount not allowed");
+                throw new Exception("You entered a negative amount.");
 
             }
             else if (withdrawal > balance)
             {
-                throw new Exception("Withdrawal exceeds the current balance");
+                throw new Exception("The amount of withdraw exceeds the current balance.");
             }
             else
             {
@@ -108,7 +110,7 @@ namespace UnitTestsDocumentation
         {
             if (deposit < 0)
             {
-                throw new Exception("Negative amount not allowed");
+                throw new Exception("You entered a negative amount.");
             }
             else
             {
