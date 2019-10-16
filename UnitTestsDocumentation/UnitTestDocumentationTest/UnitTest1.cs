@@ -17,10 +17,19 @@ namespace UnitTestDocumentationTest
         {
             Assert.Equal(5000, Program.Balance(5000));
         }
-        [Fact]
-        public void CanWithdawMoney100()
+        [Theory]
+        [InlineData(3500.50, 5000, 1499.50)]
+        [InlineData(4000, 5000, 1000)]
+        public void CanWithdawMoney(decimal endBalance, decimal startBalance, decimal withdrawal)
         {
-            Assert.Equal(4900, Program.Withdraw());
+            Assert.Equal(endBalance, Program.Withdraw(startBalance, withdrawal));
+        }
+        [Theory]
+        [InlineData(3500.50, 5000, 1499.50)]
+        [InlineData(4000, 5000, 1000)]
+        public void CanDepositMoney(decimal endBalance, decimal startBalance, decimal deposit)
+        {
+            Assert.Equal(endBalance, Program.Withdraw(startBalance, deposit));
         }
     }
 }

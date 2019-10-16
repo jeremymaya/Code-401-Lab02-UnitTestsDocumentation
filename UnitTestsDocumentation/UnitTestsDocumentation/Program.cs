@@ -29,7 +29,9 @@ namespace UnitTestsDocumentation
             }
             else if (result == "2")
             {
-                balance -= Withdraw();
+                Console.WriteLine("Enter the withdrawal amount.");
+                string input = Console.ReadLine();
+                balance = Withdraw(balance, Decimal.Parse(input));
                 return true;
             }
             else if (result == "3")
@@ -52,11 +54,27 @@ namespace UnitTestsDocumentation
             Console.WriteLine($"Your current balance is ${num}.");
             return num;
         }
-        public static decimal Withdraw()
+        public static decimal Withdraw(decimal balance, decimal withdrawal)
         {
-            Console.WriteLine("Enter the withdrawal amount.");
-            string input = Console.ReadLine();
-            return Decimal.Parse(input);
+            if(withdrawal > 0)
+            {
+                return balance -= withdrawal;
+            }
+            else
+            {
+                throw new Exception("Negative amount not allowed");
+            }
+        }
+        public static decimal Deposit(decimal balance, decimal deposit)
+        {
+            if (deposit > 0)
+            {
+                return balance += deposit;
+            }
+            else
+            {
+                throw new Exception("Negative amount not allowed");
+            }
         }
     }
 }
