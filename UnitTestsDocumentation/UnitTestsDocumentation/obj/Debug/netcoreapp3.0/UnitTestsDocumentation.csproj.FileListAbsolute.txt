@@ -1,0 +1,11 @@
+C:\Users\jerem\OneDrive\code-401\lab\Code-401-Lab02-UnitTestsDocumentation\UnitTestsDocumentation\UnitTestsDocumentation\bin\Debug\netcoreapp3.0\UnitTestsDocumentation.exe
+C:\Users\jerem\OneDrive\code-401\lab\Code-401-Lab02-UnitTestsDocumentation\UnitTestsDocumentation\UnitTestsDocumentation\bin\Debug\netcoreapp3.0\UnitTestsDocumentation.deps.json
+C:\Users\jerem\OneDrive\code-401\lab\Code-401-Lab02-UnitTestsDocumentation\UnitTestsDocumentation\UnitTestsDocumentation\bin\Debug\netcoreapp3.0\UnitTestsDocumentation.runtimeconfig.json
+C:\Users\jerem\OneDrive\code-401\lab\Code-401-Lab02-UnitTestsDocumentation\UnitTestsDocumentation\UnitTestsDocumentation\bin\Debug\netcoreapp3.0\UnitTestsDocumentation.runtimeconfig.dev.json
+C:\Users\jerem\OneDrive\code-401\lab\Code-401-Lab02-UnitTestsDocumentation\UnitTestsDocumentation\UnitTestsDocumentation\bin\Debug\netcoreapp3.0\UnitTestsDocumentation.dll
+C:\Users\jerem\OneDrive\code-401\lab\Code-401-Lab02-UnitTestsDocumentation\UnitTestsDocumentation\UnitTestsDocumentation\bin\Debug\netcoreapp3.0\UnitTestsDocumentation.pdb
+C:\Users\jerem\OneDrive\code-401\lab\Code-401-Lab02-UnitTestsDocumentation\UnitTestsDocumentation\UnitTestsDocumentation\obj\Debug\netcoreapp3.0\UnitTestsDocumentation.csprojAssemblyReference.cache
+C:\Users\jerem\OneDrive\code-401\lab\Code-401-Lab02-UnitTestsDocumentation\UnitTestsDocumentation\UnitTestsDocumentation\obj\Debug\netcoreapp3.0\UnitTestsDocumentation.AssemblyInfoInputs.cache
+C:\Users\jerem\OneDrive\code-401\lab\Code-401-Lab02-UnitTestsDocumentation\UnitTestsDocumentation\UnitTestsDocumentation\obj\Debug\netcoreapp3.0\UnitTestsDocumentation.AssemblyInfo.cs
+C:\Users\jerem\OneDrive\code-401\lab\Code-401-Lab02-UnitTestsDocumentation\UnitTestsDocumentation\UnitTestsDocumentation\obj\Debug\netcoreapp3.0\UnitTestsDocumentation.dll
+C:\Users\jerem\OneDrive\code-401\lab\Code-401-Lab02-UnitTestsDocumentation\UnitTestsDocumentation\UnitTestsDocumentation\obj\Debug\netcoreapp3.0\UnitTestsDocumentation.pdb
