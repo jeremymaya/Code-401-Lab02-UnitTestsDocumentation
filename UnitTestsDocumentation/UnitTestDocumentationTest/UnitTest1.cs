@@ -25,11 +25,11 @@ namespace UnitTestDocumentationTest
             Assert.Equal(endBalance, Program.Withdraw(startBalance, withdrawal));
         }
         [Theory]
-        [InlineData(3500.50, 5000, 1499.50)]
-        [InlineData(4000, 5000, 1000)]
+        [InlineData(5500.50, 5000, 500.50)]
+        [InlineData(6000, 5000, 1000)]
         public void CanDepositMoney(decimal endBalance, decimal startBalance, decimal deposit)
         {
-            Assert.Equal(endBalance, Program.Withdraw(startBalance, deposit));
+            Assert.Equal(endBalance, Program.Deposit(startBalance, deposit));
         }
     }
 }

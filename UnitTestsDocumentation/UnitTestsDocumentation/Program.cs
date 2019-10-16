@@ -10,10 +10,10 @@ namespace UnitTestsDocumentation
             bool displayMenu = true;
             while (displayMenu)
             {
-                displayMenu = MainMenu(balance);
+                displayMenu = MainMenu();
             }
         }
-        public static bool MainMenu(decimal num)
+        public static bool MainMenu()
         {
             Console.WriteLine("1) Balance");
             Console.WriteLine("2) Withdraw");
@@ -24,7 +24,7 @@ namespace UnitTestsDocumentation
 
             if (result == "1")
             {
-                Balance(num);
+                Balance(balance);
                 return true;
             }
             else if (result == "2")
@@ -36,7 +36,9 @@ namespace UnitTestsDocumentation
             }
             else if (result == "3")
             {
-                Console.WriteLine("Deposit");
+                Console.WriteLine("Enter the deposit amount.");
+                string input = Console.ReadLine();
+                balance = Deposit(balance, Decimal.Parse(input));
                 return true;
             }
             else if (result == "4")
@@ -49,10 +51,10 @@ namespace UnitTestsDocumentation
                 return false;
             }
         }
-        public static decimal Balance(decimal num)
+        public static decimal Balance(decimal balance)
         {
-            Console.WriteLine($"Your current balance is ${num}.");
-            return num;
+            Console.WriteLine($"Your current balance is ${balance}.");
+            return balance;
         }
         public static decimal Withdraw(decimal balance, decimal withdrawal)
         {
