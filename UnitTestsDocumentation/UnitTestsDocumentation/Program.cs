@@ -55,6 +55,7 @@ namespace UnitTestsDocumentation
                     case "4":
                         return false;
                     default:
+                        Console.WriteLine("Invalid entry.");
                         return true;
                 }
             }
